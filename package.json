@@ -1,0 +1,28 @@
+{
+  "name": "layout-designer-project-lvl3",
+  "version": "1.0.0",
+  "description": "project3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rrudger/layout-designer-project-lvl3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rrudger/layout-designer-project-lvl3/issues"
+  },
+  "homepage": "https://github.com/Rrudger/layout-designer-project-lvl3#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^6.0.0",
+    "pulp": "^15.0.0"
+  },
+  "dependencies": {
+    "popper.js": "^1.16.1"
+  }
+}
