@@ -1,0 +1,18 @@
+@import "colors.sass";
+@import "../../bootstrap/scss/_functions.scss";
+@import "../../bootstrap/scss/_variables.scss";
+@import "container.sass";
+@import "../../bootstrap/scss/bootstrap-grid.scss";
+@import "../../bootstrap/scss/bootstrap-reboot.scss";
+@import "../../bootstrap/scss/bootstrap-utilities.scss";
+@import "../../bootstrap/scss/_button-group.scss";
+@import "../../bootstrap/scss/_buttons.scss";
+
+.border-radius-16 {
+  border-radius: 1rem;
+}
+
+.border-navbar-16 {
+  border-radius: 1rem 0 0 0;
+}
+//@import "../../bootstrap/scss/bootstrap.scss";

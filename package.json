@@ -6,11 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Rrudger/layout-designer-project-lvl3.git"
-  },
-  "author": "",
+  "repository": "git+https://github.com/Rrudger/layout-designer-project-lvl3.git",
+  "author": "Rrudger <soulo@yandex.ru>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Rrudger/layout-designer-project-lvl3/issues"
@@ -19,10 +16,16 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0",
+    "gulp-sass-glob": "^1.1.0",
     "node-sass": "^6.0.0",
     "pulp": "^15.0.0"
   },
   "dependencies": {
-    "popper.js": "^1.16.1"
+    "bootstrap": "^5.0.1",
+    "del": "^6.0.0",
+    "gulp-pug": "^4.0.1",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1",
+    "save-dev": "0.0.1-security"
   }
 }

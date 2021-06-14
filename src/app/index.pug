@@ -1,0 +1,11 @@
+include head.pug
+
+.container.border-radius-16.vh-100.overflow-hidden.bg-secondary
+  include header.pug
+    
+  .row.row-cols-1.h-100.row-cols-sm-2
+    .col.col-sm-4.border-end.border-grey.px-4.pt-5
+      include left_area.pug
+    .col.col-sm-8.container-fluid.p-0
+      include right_area.pug
+    
