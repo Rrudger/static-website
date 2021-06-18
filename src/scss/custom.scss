@@ -1,18 +1,47 @@
 @import "colors.sass";
+
 @import "../../bootstrap/scss/_functions.scss";
 @import "../../bootstrap/scss/_variables.scss";
 @import "container.sass";
+
+@import "../../bootstrap/scss/_mixins.scss";
+@import "fonts-custom.sass";
 @import "../../bootstrap/scss/bootstrap-grid.scss";
 @import "../../bootstrap/scss/bootstrap-reboot.scss";
 @import "../../bootstrap/scss/bootstrap-utilities.scss";
-@import "../../bootstrap/scss/_button-group.scss";
-@import "../../bootstrap/scss/_buttons.scss";
+@import "../../bootstrap/scss/root.scss";
+@import "../../bootstrap/scss/type.scss";
+@import "../../bootstrap/scss/containers.scss";
 
-.border-radius-16 {
+@import "general.sass";
+@import "custom-mixins.scss";
+
+.container-border-16 {
   border-radius: 1rem;
 }
 
-.border-navbar-16 {
-  border-radius: 1rem 0 0 0;
+@media screen and (max-width: 600px) {
+  .container-border-16 {
+    border-radius: 0;
+  }
 }
+
+@mixin hide-scrollbar() {
+  & {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.scroll {
+  @include hide-scrollbar();
+}
+
 //@import "../../bootstrap/scss/bootstrap.scss";

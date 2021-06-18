@@ -1,7 +1,22 @@
-.row
-  .col-4.p-0.bg-primary.navbar.border-navbar-16
-    | logo
-    | contacts
-    | messages
-    | profile
-  .col
+.col.ps-4.py-4.bg-primary.navbar.text-light
+  .d-flex
+    .pe-5
+      img.img-h-25(src="../src/images/icons/logo.svg", alt="logo-hexlet")
+    .pe-3
+      .d-flex
+        .pe-2
+          img(src="../src/images/icons/people.svg", alt="contacts") 
+        .pe-2
+          small Контакты
+    .pe-3
+      .d-flex
+        .pe-2
+          img(src="../src/images/icons/chat.svg", alt="chat")
+        .pe-2
+          small Сообщения
+    .pe-3
+      .d-flex
+        .pe-2
+          img(src="../src/images/icons/person.svg", alt="profile")
+        .pe-2
+          small Профиль

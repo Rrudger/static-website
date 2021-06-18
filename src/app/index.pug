@@ -1,11 +1,15 @@
 include head.pug
 
-.container.border-radius-16.vh-100.overflow-hidden.bg-secondary
-  include header.pug
-    
-  .row.row-cols-1.h-100.row-cols-sm-2
-    .col.col-sm-4.border-end.border-grey.px-4.pt-5
+.container.p-0.m-0.container-border-16.overflow-hidden
+  .row.row-cols-1.row-cols-sm-2
+    .col.col-sm-4.vh-100.border-end.border-gray.p-0.left-area.overflow-auto.scroll
+      .d-none.d-sm-flex
+        include header.pug
       include left_area.pug
-    .col.col-sm-8.container-fluid.p-0
+      .d-flex.d-sm-none
+        include header.pug
+      
+    .col.col-sm-8.vh-100.d-none.d-sm-flex.align-items-center.justify-content-center
       include right_area.pug
+    
     
