@@ -12,6 +12,8 @@
 @import "../../bootstrap/scss/root.scss";
 @import "../../bootstrap/scss/type.scss";
 @import "../../bootstrap/scss/containers.scss";
+@import "../../bootstrap/scss/nav.scss";
+@import "../../bootstrap/scss/navbar.scss";
 
 @import "general.sass";
 @import "custom-mixins.scss";
@@ -42,6 +44,10 @@
 
 .scroll {
   @include hide-scrollbar();
+}
+
+.message-text {
+  text-decoration: none;
 }
 
 //@import "../../bootstrap/scss/bootstrap.scss";

@@ -1,15 +1,16 @@
 include head.pug
 
-.container.p-0.m-0.container-border-16.overflow-hidden
-  .row.row-cols-1.row-cols-sm-2
+.container.container-border-16.overflow-hidden
+  .row.row-cols-1.row-cols-sm-2.h-100
     .col.col-sm-4.vh-100.border-end.border-gray.p-0.left-area.overflow-auto.scroll
-      .d-none.d-sm-flex
+      .d-none.d-sm-flex.sticky-top
         include header.pug
       include left_area.pug
-      .d-flex.d-sm-none
+      .d-flex.d-sm-none.fixed-bottom
         include header.pug
-      
+          
     .col.col-sm-8.vh-100.d-none.d-sm-flex.align-items-center.justify-content-center
       include right_area.pug
+  
     
     
