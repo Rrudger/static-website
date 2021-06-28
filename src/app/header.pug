@@ -1,13 +1,17 @@
-.col.ps-4.py-4.d-flex.bg-primary.text-light
+.col.ps-4.py-4.d-flex.align-items-center.bg-primary.text-light
   .pe-5
-    img.img-h-25(src="../src/images/icons/logo.svg", alt="logo-hexlet")
+    img.fill-light.img-h-25(src="../src/images/icons/logo.svg", alt="logo-hexlet")
   .nav
-    img(src="../src/images/icons/people.svg", alt="logo-hexlet")
-    a(href="#contacts-tab", data-bs-toggle="tab", data-bs-target="#contacts-tab").nav-link
-      small.text-light Контакты
-    img(src="../src/images/icons/chat.svg", alt="logo-hexlet")
-    a(href="#messages-tab", data-bs-toggle="tab", data-bs-target="#messages-tab").nav-link
-      small.text-light Сообщения
-    img(src="../src/images/icons/person.svg", alt="logo-hexlet")
-    a(href="#profile-tab", data-bs-toggle="tab", data-bs-target="#profile-tab").nav-link
-      small.text-light Профиль
+    .d-flex.align-items-center
+      .text-light
+        include ../images/icons/people.svg
+      a(href="#contacts-tab", data-bs-toggle="tab", data-bs-target="#contacts-tab").nav-link
+        small.text-light Контакты
+    .d-flex.align-items-center
+      include ../images/icons/chat.svg
+      a(href="#messages-tab", data-bs-toggle="tab", data-bs-target="#messages-tab").nav-link
+        small.text-light Сообщения
+    .d-flex.align-items-center
+      include ../images/icons/person.svg
+      a(href="#profile-tab", data-bs-toggle="tab", data-bs-target="#profile-tab").nav-link
+        small.text-light Профиль
