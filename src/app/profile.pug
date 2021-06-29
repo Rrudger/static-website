@@ -25,8 +25,8 @@
     },
   ]
 
-h2.fw-bold.pt-4.pb-3 Профиль
-p.text-muted.ps-4.pb-3.me-4.mb-5.border-bottom.border-gray Поиск по сообщениям
+include mixins.pug
++search("Профиль", "поиск по собщениям")
 
 .card.text-center.pe-5.mb-5
   img.card-img-top.rounded-circle.img-h-90.mt-5.mb-3(src="../src/images/avatar_1.jpg", alt="profile-avatar")
@@ -38,7 +38,7 @@ p.text-muted.ps-4.pb-3.me-4.mb-5.border-bottom.border-gray Поиск по со�
   each item in profile
     .list-group-item.d-flex.justify-content-between
       .d-flex.flex-column
-        small.text-muted= item.name
+        small.text-muted.text-dark= item.name
         small= item.text
       img.img-w-16(src='../src/images/icons/' + item.image, alt=item.name + " icon")
 

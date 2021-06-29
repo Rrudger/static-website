@@ -35,8 +35,9 @@
       avatar: "/images/avatar_6.jpg"
     }],
   }
-h2.fw-bold.pt-4.pb-3 Контакты
-p.text-muted.ps-4.pb-3.me-4.mb-0.border-bottom.border-gray Поиск по контактам
+
+include mixins.pug
++search("Контакты", "поиск по контактам")
 
 div
   each contact, letter in contacts
@@ -46,5 +47,5 @@ div
         .avatar.d-flex.align-items-center
           img.img-h-50.ps-3.pe-4.rounded-circle(src='../src' + person.avatar, alt=person.name + " аватар") 
         .person-data
-          h6.fw-bold= person.name
+          h6.fw-bold.text-dark= person.name
           small.text-muted= person.status

@@ -2,16 +2,13 @@
   .pe-5
     img.fill-light.img-h-25(src="../src/images/icons/logo.svg", alt="logo-hexlet")
   .nav
-    .d-flex.align-items-center
+    a.d-flex.align-items-center(href="#contacts-tab", data-bs-toggle="tab", data-bs-target="#contacts-tab")
       .text-light
         include ../images/icons/people.svg
-      a(href="#contacts-tab", data-bs-toggle="tab", data-bs-target="#contacts-tab").nav-link
-        small.text-light Контакты
-    .d-flex.align-items-center
+        small.text-light.ms-2 Контакты
+    a(href="#messages-tab", data-bs-toggle="tab", data-bs-target="#messages-tab").nav-link.d-flex.align-items-center
       include ../images/icons/chat.svg
-      a(href="#messages-tab", data-bs-toggle="tab", data-bs-target="#messages-tab").nav-link
-        small.text-light Сообщения
-    .d-flex.align-items-center
+      small.text-light.ms-2 Сообщения
+    a(href="#profile-tab", data-bs-toggle="tab", data-bs-target="#profile-tab").nav-link.d-flex.align-items-center
       include ../images/icons/person.svg
-      a(href="#profile-tab", data-bs-toggle="tab", data-bs-target="#profile-tab").nav-link
-        small.text-light Профиль
+      small.text-light.ms-2 Профиль

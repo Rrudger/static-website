@@ -21,18 +21,18 @@
       avatar: "/images/avatar_3.jpg"
     },
   ]
-  
-h2.fw-bold.pt-4.pb-3 Чаты
-p.text-muted.ps-4.pb-3.me-4.mb-0.border-bottom.border-gray Поиск по сообщениям
 
-  div
-    each message in messages
-      .contact.d-flex.flex-row.me-4.mt-4.pb-3.border-bottom.border-gray
-        .avatar.d-flex.align-items-center
-          img.img-h-50.ps-3.pe-4.rounded-circle(src='../src' + message.avatar, alt=message.name + " аватар") 
-        .person-data.w-100
-          .d-flex.justify-content-between
-            h6.fw-bold= message.name
-            small.text-muted= message.time
-          small
-            a(href="#").text-muted.d-inline-block.text-truncate.text-decoration-none= message.text
+include mixins.pug
++search("Чаты", "поиск по сообщениям")  
+          
+div
+  each message in messages
+    .contact.d-flex.flex-row.me-4.mt-4.pb-3.border-bottom.border-gray
+      .avatar.d-flex.align-items-center
+        img.img-h-50.ps-3.pe-4.rounded-circle(src='../src' + message.avatar, alt=message.name + " аватар") 
+      .person-data.w-100
+        .d-flex.justify-content-between
+          h6.fw-bold.text-dark= message.name
+          small.text-muted= message.time
+        small
+          a(href="#").text-muted.d-inline-block.text-truncate.text-decoration-none= message.text
