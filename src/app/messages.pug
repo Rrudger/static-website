@@ -4,21 +4,18 @@
       name: "Вениамин Редакторович",
       text: "o_O",
       time: "11:45",
-      avatar: "/images/avatar_4.jpg"
     },
 
     {
       name: "Джедай Падаванов",
-      text: "Привет, скоро третий проект? Уже скоро надо будет выложить",
+      text: "Привет, скоро третий проект? Уже скоро надо будет выложить444444444444444444444444444444444444444444",
       time: "10:12",
-      avatar: "/images/avatar_2.jpg"
     },
 
     {
       name: "Алексей Примадонин",
       text: "Тесты упали >_<",
       time: "08:53",
-      avatar: "/images/avatar_3.jpg"
     },
   ]
 
@@ -27,12 +24,10 @@ include mixins.pug
           
 div
   each message in messages
-    .contact.d-flex.flex-row.me-4.mt-4.pb-3.border-bottom.border-gray
-      .avatar.d-flex.align-items-center
-        img.img-h-50.ps-3.pe-4.rounded-circle(src='../src' + message.avatar, alt=message.name + " аватар") 
-      .person-data.w-100
-        .d-flex.justify-content-between
-          h6.fw-bold.text-dark= message.name
-          small.text-muted= message.time
-        small
-          a(href="#").text-muted.d-inline-block.text-truncate.text-decoration-none= message.text
+    .contact.me-4.mt-4.pb-3.d-flex.shadow-sm
+      +getAvatar(message.name, "d-inline-block avatar img-h-50 ps-3 pe-4 rounded-circle")
+      .d-flex.flex-column.flex-grow-1.overflow-hidden
+        h6.fw-bold.text-dark= message.name
+        small.text-muted.text-truncate= message.text
+      small.text-muted= message.time
+  

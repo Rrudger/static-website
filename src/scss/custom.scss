@@ -3,6 +3,7 @@
 @import "../../bootstrap/scss/_functions.scss";
 @import "../../bootstrap/scss/_variables.scss";
 @import "container.sass";
+@import "border.scss";
 
 @import "../../bootstrap/scss/_mixins.scss";
 @import "fonts-custom.sass";
@@ -45,6 +46,37 @@
 
 .scroll {
   @include hide-scrollbar();
+}
+
+.text-gray {
+  color: $gray;
+}
+
+.contact a:hover {
+  background-color: $primary;
+    h6 {
+      color: $light !important;
+}
+    small {
+      color: $gray !important;
+    }
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.nav .icon {
+  fill: $white;
+  height: 25px;
+}
+
+.chat-form {
+  max-height: 90px;
 }
 
 

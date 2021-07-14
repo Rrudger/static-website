@@ -1,3 +1,12 @@
+.cursor-pointer {
+  cursor: pointer; }
+
+.cursor-default {
+  cursor: default; }
+
+.cursor-none {
+  cursor: none; }
+
 /*!
  * Bootstrap Grid v5.0.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -6813,8 +6822,8 @@ progress {
 .img-w-16 {
   width: 16px; }
 
-svg {
-  fill: #fbfbfb; }
+.img-w-25 {
+  width: 25px; }
 
 .input-form {
   outline: none;
@@ -6838,3 +6847,26 @@ svg {
 
 .scroll::-webkit-scrollbar {
   display: none; }
+
+.text-gray {
+  color: #efefef; }
+
+.contact a:hover {
+  background-color: #4545a5; }
+  .contact a:hover h6, .contact a:hover .h6 {
+    color: #fbfbfb !important; }
+  .contact a:hover small, .contact a:hover .small {
+    color: #efefef !important; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+.nav .icon {
+  fill: #fff;
+  height: 25px; }
+
+.chat-form {
+  max-height: 90px; }

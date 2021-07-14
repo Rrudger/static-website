@@ -1,7 +1,44 @@
+-
+  var users = [
+    {
+      name: "Кодовёнок Хекслетович",
+      avatar: "avatar_1.jpg"
+    },  
+    {
+      name: "Джедай Падаванов",
+      avatar: "avatar_2.jpg"
+    },
+    {
+      name: "Алексей Примадонин",
+      avatar: "avatar_3.jpg"
+    },
+    {
+      name: "Вениамин Редакторович",
+      avatar: "avatar_4.jpg"
+    },
+    {
+      name: "Королева Верстальщина",
+      avatar: "avatar_5.jpg"
+    },
+    {
+      name: "Питонист Джангович",
+      avatar: "avatar_6.jpg"
+    },
+  ]
+
+
 mixin search(searchHeader, searchPlaceholder)
   .border-bottom.border-gray.me-4
-    h2.fw-bold.text-dark.pt-4.pb-3= searchHeader
+    h2.fw-bold.text-dark.pb-3= searchHeader
     form
       input.shadow-none.input-form.form-control.text-secondary.ps-4.pb-3.mb-0(
         type="text"
         placeholder= searchPlaceholder)
+
+mixin getAvatar(name, classes)
+  each user in users
+    if name==user.name
+      -let classe= "img class='" + classes +"'"+ " src='../src/images/" + user.avatar+"'"+"alt='"+name+" аватар'"
+      #{classe}
+      
+     
