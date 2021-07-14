@@ -24,10 +24,11 @@ include mixins.pug
           
 div
   each message in messages
-    .contact.me-4.mt-4.pb-3.d-flex.shadow-sm
-      +getAvatar(message.name, "d-inline-block avatar img-h-50 ps-3 pe-4 rounded-circle")
-      .d-flex.flex-column.flex-grow-1.overflow-hidden
-        h6.fw-bold.text-dark= message.name
-        small.text-muted.text-truncate= message.text
-      small.text-muted= message.time
+    .message.mt-4.d-flex.shadow-sm
+      a(href="#").d-flex.pb-3.pe-4.pt-3.w-100  
+        +getAvatar(message.name, "d-inline-block avatar img-h-50 ps-3 pe-4 rounded-circle")
+        .d-flex.flex-column.flex-grow-1.overflow-hidden
+          h6.fw-bold.text-dark= message.name
+          small.message-text.text-muted.text-truncate= message.text
+        small.text-muted= message.time
   

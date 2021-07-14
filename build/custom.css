@@ -6858,6 +6858,13 @@ progress {
   .contact a:hover small, .contact a:hover .small {
     color: #efefef !important; }
 
+.message a:hover {
+  background-color: #4545a5; }
+  .message a:hover h6, .message a:hover .h6 {
+    color: #fbfbfb !important; }
+  .message a:hover .message-text {
+    color: #fbfbfb !important; }
+
 a {
   text-decoration: none; }
 
