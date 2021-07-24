@@ -2,8 +2,9 @@
   .row.nav
     .col-5.col-sm-2
       img.img-h-25(src="../src/images/icons/logo.svg", alt="logo-hexlet")
-    a(href="#chat", data-bs-toggle="tab", data-bs-target="#chat").d-sm-none.col.d-flex.align-center.d-flex.align-items-center
-        include ../images/icons/chats.svg
+    if chat
+      a(href="#chat", data-bs-toggle="tab", data-bs-target="#chat").d-sm-none.col.d-flex.align-center.d-flex.align-items-center
+          include ../images/icons/chats.svg
     a(href="#contacts", data-bs-toggle="tab", data-bs-target="#contacts").col.d-flex.align-center.d-flex.align-items-center
         include ../images/icons/people.svg
         small.d-none.d-sm-block.text-light.ms-2 Контакты

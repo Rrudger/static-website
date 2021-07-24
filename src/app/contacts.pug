@@ -44,8 +44,8 @@ div
     h3.display-6.text-muted.pt-5.mb-3= letter
     each person in contact
       .contact.d-flex.me-4.mt-4.shadow-sm
-        a(href="#").d-flex.pb-3.pt-3.w-100
-          +getAvatar(person.name,"avatar img-h-50 ps-3 pe-4 rounded-circle")
-          .w-100
+        a(href="#").d-flex.pb-3.pt-3.ps-3.w-100
+          +getAvatar(person.name,"avatar img-h-50 rounded-circle")
+          .w-100.ps-4
             h6.fw-bold.text-dark= person.name
             small.text-muted= person.status

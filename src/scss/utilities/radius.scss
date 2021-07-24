@@ -1,0 +1,28 @@
+$custom-radius: 1rem;
+
+
+$utilities: map-merge(
+  (
+    "radius": (
+      property: border-radius,
+      class: radius,
+      values: (null: $custom-radius),
+    ),
+    "radius-left-top": (
+    property: border-top-left-radius,
+    class: radius-left-top,
+    values: (null: $custom-radius),
+    ),
+    "radius-left": (
+    property: border-top-left-radius border-bottom-left-radius,
+    class: radius-left,
+    values: (null: $custom-radius),
+    ),
+    "radius-right": (
+    property: border-top-right-radius border-bottom-right-radius,
+    class: radius-right,
+    values: (null: $custom-radius),
+    )
+  ),
+  $utilities
+);

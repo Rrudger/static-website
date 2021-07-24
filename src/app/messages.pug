@@ -8,7 +8,7 @@
 
     {
       name: "Джедай Падаванов",
-      text: "Привет, скоро третий проект? Уже скоро надо будет выложить444444444444444444444444444444444444444444",
+      text: "Привет, скоро третий проект? Уже скоро надо будет выложить",
       time: "10:12",
     },
 
@@ -25,9 +25,9 @@ include mixins.pug
 div
   each message in messages
     .message.mt-4.d-flex.shadow-sm
-      a(href="#").d-flex.pb-3.pe-4.pt-3.w-100  
-        +getAvatar(message.name, "d-inline-block avatar img-h-50 ps-3 pe-4 rounded-circle")
-        .d-flex.flex-column.flex-grow-1.overflow-hidden
+      a(href="#").d-flex.pb-3.pe-4.pt-3.ps-3.w-100
+        +getAvatar(message.name, "d-inline-block avatar img-h-50 rounded-circle")
+        .d-flex.flex-column.flex-grow-1.overflow-hidden.ps-4
           h6.fw-bold.text-dark= message.name
           small.message-text.text-muted.text-truncate= message.text
         small.text-muted= message.time

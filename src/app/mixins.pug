@@ -28,8 +28,8 @@
 
 
 mixin search(searchHeader, searchPlaceholder)
-  .border-bottom.border-gray.me-4
-    h2.fw-bold.text-dark.pb-3= searchHeader
+  .border-bottom.me-4
+    h2.fw-bold.text-dark.pb-4.mb-3= searchHeader
     form
       input.shadow-none.input-form.form-control.text-secondary.ps-4.pb-3.mb-0(
         type="text"
@@ -38,7 +38,7 @@ mixin search(searchHeader, searchPlaceholder)
 mixin getAvatar(name, classes)
   each user in users
     if name==user.name
-      -let classe= "img class='" + classes +"'"+ " src='../src/images/" + user.avatar+"'"+"alt='"+name+" аватар'"
-      #{classe}
+      -let avatar= "img class='" + classes +"'"+ " src='../src/images/" + user.avatar+"'"+"alt='"+name+" аватар'"
+      #{avatar}
       
      

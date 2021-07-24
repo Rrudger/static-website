@@ -1,13 +1,20 @@
 include head.pug
+-let chat= true
 
-.container.container-border-16.overflow-hidden
+.container.radius.overflow-hidden
   .row.row-cols-1.row-cols-sm-2.h-100
     .col.col-sm-4.vh-100.border-end.border-gray.p-0.left-area.overflow-auto.scroll
       .d-none.d-sm-flex.sticky-top
         include header.pug
       include left_area.pug
-      .d-flex.d-sm-none.fixed-bottom
+      .d-flex.d-sm-none.flex-column.fixed-bottom
+        include chat_form.pug
         include header.pug
+        
           
     .col.col-sm-8.vh-100.d-none.d-sm-flex.flex-column.overflow-auto.scroll
+      .sticky-top.bg-white
+        include chat_header.pug 
       include right_area_chat.pug
+      .position-sticky.bottom-0.end-0
+        include chat_form.pug

@@ -1,0 +1,47 @@
+$utilities: map-merge(
+  (
+    "border": (
+    responsive: true,
+    property: border,
+    values: (
+      null: 1px solid #efefef,
+      0: 0,
+    )
+    ),
+    "border-top": (
+      responsive: true,
+      property: border-top,
+      values: (
+        null: 1px solid #efefef,
+        0: 0,
+      )
+    ),
+    "border-end": (
+      responsive: true,
+      property: border-right,
+      class: border-end,
+      values: (
+        null: 1px solid #efefef,
+        0: 0,
+      )
+    ),
+    "border-bottom": (
+      responsive: true,
+      property: border-bottom,
+      values: (
+        null: 1px solid #efefef,
+        0: 0,
+      )
+    ),
+    "border-start": (
+      responsive: true,
+      property: border-left,
+      class: border-start,
+      values: (
+        null: 1px solid #efefef,
+        0: 0,
+      )
+    ),
+  ),
+  $utilities
+);

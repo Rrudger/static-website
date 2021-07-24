@@ -1,17 +1,23 @@
-@import "colors.sass";
-
+@import "custom_variables.sass";
 @import "../../bootstrap/scss/_functions.scss";
 @import "../../bootstrap/scss/_variables.scss";
+@import "../../bootstrap/scss/_utilities.scss";
+
 @import "container.sass";
-@import "border.scss";
+@import "../../bootstrap/scss/bootstrap-grid.scss";
+
+@import "utilities/border.scss";
+@import "utilities/radius.scss";
 
 @import "../../bootstrap/scss/_mixins.scss";
+
 @import "fonts-custom.sass";
-@import "../../bootstrap/scss/bootstrap-grid.scss";
+
 @import "../../bootstrap/scss/bootstrap-reboot.scss";
 @import "../../bootstrap/scss/bootstrap-utilities.scss";
 @import "../../bootstrap/scss/root.scss";
 @import "../../bootstrap/scss/type.scss";
+
 @import "../../bootstrap/scss/containers.scss";
 @import "../../bootstrap/scss/nav.scss";
 @import "../../bootstrap/scss/navbar.scss";
@@ -20,14 +26,8 @@
 @import "general.sass";
 @import "custom-mixins.scss";
 
-.container-border-16 {
-  border-radius: 1rem;
-}
-
-@media screen and (max-width: 600px) {
-  .container-border-16 {
-    border-radius: 0;
-  }
+.m-100 {
+  margin-bottom: 100px;
 }
 
 @mixin hide-scrollbar() {
@@ -91,6 +91,8 @@ a:hover {
 .chat-form {
   max-height: 90px;
 }
+
+
 
 
 //@import "../../bootstrap/scss/bootstrap.scss";

@@ -27,36 +27,22 @@
   
 include mixins.pug
 
-.d-flex.sticky-top.bg-white
-  .d-flex.flex-row.w-100.me-4.mt-4.pb-3.border-bottom.border-gray
-    .d-flex.align-items-center
-      img.img-h-50.ps-3.pe-4.rounded-circle(src='../src/images/avatar_4.jpg', alt="аватар") 
-    .div
-      h6.fw-bold.text-dark "Вениамин Редакторович"
-      small.text-muted "Онлайн"
-
-
-each message in messages
-  if message.name=="Кодовёнок Хекслетович"
-    .d-flex.justify-content-end.mt-5.mb-5
-      .d-flex.flex-row.align-items-end.w-75
-        .d-flex.align-items-center
-          +getAvatar(message.name, "img-h-50 rounded-circle shadow-sm")
-        .bg-primary.shadow-sm.container-border-16.p-4
-          .text-light.border-bottom.border-light.pb-2= message.text
-          small.text-gray= message.time
-  else
-    .d-flex.mb-5
-      .d-flex.flex-row.align-items-end.w-75
-        .d-flex.align-items-center
-          +getAvatar(message.name,"img-h-50 rounded-circle shadow-sm") 
-        .bg-light.shadow-sm.container-border-16.p-4
-          h6.fw-bold.text-dark= message.name
-          .text-muted.pb-2= message.text
-          small.text-muted= message.time
-
-form.chat-form.d-flex.justify-content-between.border-top.border-grey.bg-white.p-3.position-sticky.bottom-0.end-0
-  input.shadow-none.input-form.form-control.text-secondary.ps-4.pb-3.mt-3(
-    type="text"
-    placeholder= "Напишите сообщение...")
-  img.rounded-circle.img-h-50.bg-primary.p-2(src="../src/images/icons/cursor.svg", alt="курсор")
+.container.pb-5
+  each message in messages
+    if message.name=="Кодовёнок Хекслетович"
+      .row.justify-content-end.mt-5.mb-5
+        .col.col-sm-8.d-flex.align-items-end
+          .d-flex.align-items-center
+            +getAvatar(message.name, "img-h-50 rounded-circle shadow-sm d-none d-sm-block")
+          .bg-primary.shadow-sm.radius.p-4.ms-3
+            .text-light.border-bottom.border-light.pb-2= message.text
+            small.text-gray= message.time
+    else
+      .row.mb-5
+        .col.col-sm-8.d-flex.align-items-end
+          .d-flex.align-items-center
+            +getAvatar(message.name,"img-h-50 rounded-circle shadow-sm d-none d-sm-block") 
+          .bg-light.shadow-sm.radius.p-4.ms-3
+            h6.fw-bold.text-dark= message.name
+            .text-muted.pb-2= message.text
+            small.text-muted= message.time
