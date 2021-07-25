@@ -29,7 +29,7 @@ include mixins.pug
 +search("Профиль", "поиск по собщениям")
 
 .card.text-center.pe-5.mb-5
-  img.card-img-top.rounded-circle.img-h-90.mt-5.mb-3(src="../src/images/avatar_1.jpg", alt="profile-avatar")
+  img.card-img-top.rounded-circle.img-h-90.mt-5.mb-3(src="images/avatar_1.jpg", alt="profile-avatar")
   .card-body
     h6.fw-bold.text-dark.card-title.mb-3 Кодовёнок Хекслетович
     .card-text.text-muted Милый и скромный помощник начинающих разработчиков. Люблю JavaScript
@@ -40,6 +40,6 @@ include mixins.pug
       .d-flex.flex-column.pt-2
         small.text-secondary= item.name
         small.text-dark= item.text
-      img.img-w-16(src='../src/images/icons/' + item.image, alt=item.name + " icon")
+      img.img-w-16(src='images/icons/' + item.image, alt=item.name + " icon")
 
   

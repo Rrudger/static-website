@@ -1,17 +1,17 @@
 .container.bg-primary.px-4.py-4.w-100
   .row.nav
     .col-5.col-sm-2
-      img.img-h-25(src="../src/images/icons/logo.svg", alt="logo-hexlet")
+      img.img-h-25(src="images/icons/logo.svg", alt="logo-hexlet")
     if chat
       a(href="#chat", data-bs-toggle="tab", data-bs-target="#chat").d-sm-none.col.d-flex.align-center.d-flex.align-items-center
-          include ../images/icons/chats.svg
+          include ../../build/images/icons/chats.svg
     a(href="#contacts", data-bs-toggle="tab", data-bs-target="#contacts").col.d-flex.align-center.d-flex.align-items-center
-        include ../images/icons/people.svg
+        include ../../build/images/icons/people.svg
         small.d-none.d-sm-block.text-light.ms-2 Контакты
     a(href="#chats", data-bs-toggle="tab", data-bs-target="#chats").col.d-flex.align-center.d-flex.align-items-center
-        include ../images/icons/chat.svg
+        include ../../build/images/icons/chat.svg
         small.d-none.d-sm-block.text-light.ms-2 Сообщения
     a(href="#profile", data-bs-toggle="tab", data-bs-target="#profile").col.d-flex.align-center.d-flex.align-items-center
-        include ../images/icons/person.svg
+        include ../../build/images/icons/person.svg
         small.d-none.d-sm-block.text-light.ms-2 Профиль
     

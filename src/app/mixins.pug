@@ -38,7 +38,7 @@ mixin search(searchHeader, searchPlaceholder)
 mixin getAvatar(name, classes)
   each user in users
     if name==user.name
-      -let avatar= "img class='" + classes +"'"+ " src='../src/images/" + user.avatar+"'"+"alt='"+name+" аватар'"
+      -let avatar= "img class='" + classes +"'"+ " src='images/" + user.avatar+"'"+"alt='"+name+" аватар'"
       #{avatar}
       
      
