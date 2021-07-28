@@ -35,6 +35,9 @@ body {
   margin-bottom: 150px;
 }
 
+.m-100 {
+  margin-bottom: 70px;
+}
 
 @mixin hide-scrollbar() {
   & {

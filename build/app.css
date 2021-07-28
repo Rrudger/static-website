@@ -6944,6 +6944,9 @@ body {
 .m-150 {
   margin-bottom: 150px; }
 
+.m-100 {
+  margin-bottom: 70px; }
+
 .scroll {
   -ms-overflow-style: none;
   scrollbar-width: none;
