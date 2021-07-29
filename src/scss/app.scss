@@ -39,6 +39,10 @@ body {
   margin-bottom: 70px;
 }
 
+.mt-50 {
+  margin-top: 50px;
+}
+
 @mixin hide-scrollbar() {
   & {
     -ms-overflow-style: none;

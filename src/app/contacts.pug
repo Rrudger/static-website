@@ -41,11 +41,19 @@ include mixins.pug
 
 div
   each contact, letter in contacts
-    h3.display-6.text-muted.pt-5.mb-4= letter
+    h3.display-6.text-muted.mt-50.mb-4= letter
     each person in contact
-      .contact.d-flex.me-4.mt-3.shadow-sm
-        a(href="#").d-flex.align-items-center.pb-3.pt-3.ps-3.w-100
-          +getAvatar(person.name,"avatar img-h-50 rounded-circle")
-          .w-100.ps-4
-            h6.fw-bold.text-dark.mb-0= person.name
-            small.text-muted= person.status
+      if contact.length==2 && person==contact[1]
+        .contact.d-flex.me-4.mt-4.shadow-sm
+          a(href="#").d-flex.align-items-center.pb-3.pt-3.ps-3.w-100
+            +getAvatar(person.name,"avatar img-h-50 rounded-circle")
+            .w-100.ps-4.my-1
+              h6.fw-bold.text-dark.mb-0= person.name
+              small.text-muted= person.status
+      else
+        .contact.d-flex.me-4.mt-3.shadow-sm
+          a(href="#").d-flex.align-items-center.pb-3.pt-3.ps-3.w-100
+            +getAvatar(person.name,"avatar img-h-50 rounded-circle")
+            .w-100.ps-4.my-1
+              h6.fw-bold.text-dark.mb-0= person.name
+              small.text-muted= person.status        
