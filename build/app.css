@@ -6949,6 +6949,9 @@ body {
   h2, .h2 {
     font-size: 2rem; } }
 
+h6, .h6 {
+  line-height: 1.5rem; }
+
 .m-150 {
   margin-bottom: 150px; }
 
