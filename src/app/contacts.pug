@@ -45,15 +45,16 @@ div
     each person in contact
       if contact.length==2 && person==contact[1]
         .contact.d-flex.me-4.mt-4.pt-2.shadow-sm
-          a(href="#").d-flex.align-items-center.pb-2.pt-3.ps-3.w-100
+          a(href="#").d-flex.align-items-center.pb-3.mb-0.pt-3.ps-3.w-100
             +getAvatar(person.name,"avatar img-h-50 rounded-circle")
             .w-100.ps-4.my-1
               h6.fw-bold.text-dark.mb-0= person.name
               small.text-muted= person.status
       else
         .contact.d-flex.me-4.pt-2.shadow-sm
-          a(href="#").d-flex.align-items-center.pb-2.pt-3.ps-3.w-100
-            +getAvatar(person.name,"avatar img-h-50 rounded-circle")
+          a(href="#").d-flex.align-items-center.pb-3.pt-3.mb-0.ps-3.w-100
+            .pb-1
+              +getAvatar(person.name,"avatar img-h-50 rounded-circle")
             .w-100.ps-4.my-1
               h6.fw-bold.text-dark.mb-0= person.name
               small.text-muted= person.status        
