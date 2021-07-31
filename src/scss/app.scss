@@ -31,6 +31,18 @@ body {
   padding: 24px;
 }
 
+@media screen and (max-width: 576px) {
+  body {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
 .m-150 {
   margin-bottom: 150px;
 }
