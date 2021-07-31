@@ -41,7 +41,7 @@ include mixins.pug
 
 div
   each contact, letter in contacts
-    h3.display-6.text-muted.mt-50= letter
+    h3.display-6.text-muted.mt-50.mb-3= letter
     each person in contact
       if contact.length==2 && person==contact[1]
         .contact.d-flex.me-4.mt-4.pt-2.shadow-sm
