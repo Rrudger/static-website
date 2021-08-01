@@ -1,8 +1,16 @@
 .tab-content.ps-4.py-5.m-150
-  #contacts.tab-pane.fade.show.active
-    include contacts.pug
-  #chats.tab-pane.fade
-    include messages.pug
+  if chat
+    #contacts.tab-pane.fade
+      include contacts.pug
+  else
+    #contacts.tab-pane.fade.show.active
+      include contacts.pug
+  if chat
+    #chats.tab-pane.fade.show.active
+      include messages.pug
+  else
+    #chats.tab-pane.fade
+      include messages.pug
   #profile.tab-pane.fade
     include profile.pug
   #chat.tab-pane.fade.d-sm-none
