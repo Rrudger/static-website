@@ -24,11 +24,13 @@ include mixins.pug
           
 .pt-1
   each message in messages
-    .message.d-flex.shadow-sm.mt-3
+    .message.d-flex.shadow-sm.mb-3
       a(href="#").d-flex.py-0.pe-4.ps-3.w-100.align-items-center
         +getAvatar(message.name, "d-inline-block avatar img-h-50 rounded-circle")
         .d-flex.flex-column.flex-grow-1.overflow-hidden.ps-4.py-4
-          h6.fw-bold.m-0.text-dark= message.name
+          .d-flex.justify-content-between.me-2.pe-1
+            h6.fw-bold.m-0.text-dark= message.name
+            small.text-muted= message.time
           small.message-text.text-muted.text-truncate= message.text
-        small.text-muted.pe-2= message.time
+          
   
