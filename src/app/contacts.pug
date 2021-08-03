@@ -44,16 +44,16 @@ div
     h3.display-6.text-muted.mt-50.mb-3= letter
     each person in contact
       if contact.length==2 && person==contact[1]
-        .contact.d-flex.mt-4.pt-2.shadow-sm
-          a(href="#").d-flex.align-items-center.pb-3.mb-0.pt-3.ps-3.w-100
+        .contact.d-flex.shadow-sm
+          a(href="#").d-flex.align-items-center.pt-4.pb-3.ps-3.mb-1.w-100
             +getAvatar(person.name,"avatar img-h-50 rounded-circle")
             .w-100.ps-4
-              h6.fw-bold.text-dark.mb-0= person.name
+              h6.fw-bold.text-dark.m-0= person.name
               small.text-muted= person.status
       else
-        .contact.d-flex.pt-2.shadow-sm
-          a(href="#").d-flex.align-items-center.pb-3.pt-3.mb-0.ps-3.w-100
+        .contact.d-flex.shadow-sm
+          a(href="#").d-flex.align-items-center.pt-4.pb-3.ps-3.mb-1.w-100
             +getAvatar(person.name,"avatar img-h-50 rounded-circle")
             .w-100.ps-4
-              h6.fw-bold.text-dark.mb-0= person.name
+              h6.fw-bold.m-0.text-dark= person.name
               small.text-muted= person.status        
