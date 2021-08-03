@@ -4,18 +4,18 @@
       .col-4.col-sm-1
         img.img-h-25(src="images/icons/logo.svg", alt="logo-hexlet")
     else
-      .col-6.col-sm-1
+      .col-6.col-sm-2
         img.img-h-25(src="images/icons/logo.svg", alt="logo-hexlet")
     if chat
-      a(href="#chat", data-bs-toggle="tab", data-bs-target="#chat").d-sm-none.col.d-flex.align-center.d-flex.align-items-center
+      a(href="#chat", data-bs-toggle="tab", data-bs-target="#chat").d-sm-none.col.d-flex.align-items-center
         include ../../build/images/icons/chats.svg
-    a(href="#contacts", data-bs-toggle="tab", data-bs-target="#contacts").col.d-flex.align-center.d-flex.align-items-center
+    a(href="#contacts", data-bs-toggle="tab", data-bs-target="#contacts").col.d-flex.align-items-center
       include ../../build/images/icons/people.svg
       small.d-none.d-sm-block.text-light.ms-2 Контакты
-    a(href="#chats", data-bs-toggle="tab", data-bs-target="#chats").col.d-flex.align-center.d-flex.align-items-center
+    a(href="#chats", data-bs-toggle="tab", data-bs-target="#chats").col.d-flex.align-items-center
       include ../../build/images/icons/chat.svg
       small.d-none.d-sm-block.text-light.ms-2 Сообщения
-    a(href="#profile", data-bs-toggle="tab", data-bs-target="#profile").col.d-flex.align-center.d-flex.align-items-center
+    a(href="#profile", data-bs-toggle="tab", data-bs-target="#profile").col.d-flex.align-items-center
       include ../../build/images/icons/person.svg
       small.d-none.d-sm-block.text-light.ms-2 Профиль
     
