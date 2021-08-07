@@ -34,13 +34,9 @@ body {
   background-color: #efefef;
   overflow: hidden;
   padding: 24px;
-  overflow: hidden;
-  max-height: 100vh;
+  height: 90vh;
 }
 
-html {
-  max-height: 100vh;
-}
 
 @media screen and (max-width: 576px) {
   body {
