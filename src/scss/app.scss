@@ -26,17 +26,8 @@
 @import "general.sass";
 @import "custom-mixins.scss";
 
-.test {
-  max-height: 100% !important;
-}
-
 .mb-44 {
   margin-bottom: 44px;
-}
-
-html {
-
-  overflow: hidden;
 }
 
 body {
@@ -44,7 +35,6 @@ body {
   overflow: hidden;
   padding: 24px;
   height: 100vh;
-  max-height: 100vh;
 }
 
 
