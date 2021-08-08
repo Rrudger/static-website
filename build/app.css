@@ -6937,14 +6937,21 @@ progress {
 .border-gray {
   border-color: #efefef; }
 
-.test-m-44 {
+.test {
+  max-height: 100% !important; }
+
+.mb-44 {
   margin-bottom: 44px; }
+
+html {
+  overflow: hidden; }
 
 body {
   background-color: #efefef;
   overflow: hidden;
   padding: 24px;
-  height: 90vh; }
+  height: 100vh;
+  max-height: 100vh; }
 
 @media screen and (max-width: 576px) {
   body {
