@@ -31,15 +31,17 @@ include mixins.pug
   each message in messages
     if message.name=="Кодовёнок Хекслетович"
       .row.justify-content-end.mt-2.mb-2
-        .col.col-sm-10.d-flex.align-items-end
+        .col.col-sm-9.d-flex.align-items-end
           .d-flex.align-items-center
             +getAvatar(message.name, "img-h-50 rounded-circle shadow-sm d-none d-sm-block")
           .bg-primary.shadow-sm.radius.p-4.ms-3
             .text-light.border-bottom.border-light.pb-2= message.text
             small.text-gray= message.time
+        if message == messages[1]
+          .mb-150
     else
       .row.mb-2
-        .col.col-sm-10.d-flex.align-items-end
+        .col.col-sm-9.d-flex.align-items-end
           .d-flex.align-items-center
             +getAvatar(message.name,"img-h-50 rounded-circle shadow-sm d-none d-sm-block") 
           .bg-light.shadow-sm.radius.p-4.ms-3
