@@ -11,7 +11,13 @@
       text: "Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень",
       time: "5 минут назад",
     },
-
+    
+    {
+      name: "Вениамин Редакторович",
+      text: "Лады",
+      time: "5 минут назад",
+    },
+    
     {
       name: "Кодовёнок Хекслетович",
       text: "А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие",
@@ -37,8 +43,6 @@ include mixins.pug
           .bg-primary.shadow-sm.radius.p-4.ms-3
             .text-light.border-bottom.border-light.pb-2= message.text
             small.text-gray= message.time
-        if message == messages[1]
-          .mb-150
     else
       .row.mb-2
         .col.col-sm-9.d-flex.align-items-end
