@@ -30,7 +30,7 @@ include mixins.pug
 .container.pb-5
   each message in messages
     if message.name=="Кодовёнок Хекслетович"
-      .row.justify-content-end.mt-5.mb-5
+      .row.justify-content-end.mt-2.mb-2
         .col.col-sm-8.d-flex.align-items-end
           .d-flex.align-items-center
             +getAvatar(message.name, "img-h-50 rounded-circle shadow-sm d-none d-sm-block")
@@ -38,7 +38,7 @@ include mixins.pug
             .text-light.border-bottom.border-light.pb-2= message.text
             small.text-gray= message.time
     else
-      .row.mb-5
+      .row.mb-2
         .col.col-sm-8.d-flex.align-items-end
           .d-flex.align-items-center
             +getAvatar(message.name,"img-h-50 rounded-circle shadow-sm d-none d-sm-block") 
